@@ -1,0 +1,27 @@
+Package: socompanion
+Title: Read and answer Stackoverflow posts from the comfort of the R
+    interactive console
+Description: StackOverflow R Companion provides alerts from within the
+    interactive R console whenever a new R question is posted. Since useRs tend
+    to spend a lot of time in the console, by embedding the read-answer flow
+    into the console it should greatly increase the speed at which questions
+    can be answered -- which leads to more of that juicy karma!
+Version: 0.1
+Author: Robert Krzyzanowski <technoguyrob@gmail.com>
+Maintainer: Robert Krzyzanowski <technoguyrob@gmail.com>
+Authors@R: c(person("Robert", "Krzyzanowski",
+    email = "technoguyrob@gmail.com", role = c("aut", "cre")))
+Depends:
+    R (>= 3.0.1)
+License: MIT
+LazyData: true
+Imports:
+    testthat,
+    rjson,
+    httr,
+    XML,
+    RCurl
+Suggests:
+    knitr,
+    microbenchmark
+Roxygen: list(wrap = FALSE)
